@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Friend List</title>
+    <script src="../libs/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="../model/factory.js"></script>
+    <script src="../controller/ctrl.js"></script>
+</head>
+<body ng-app="friendapp" ng-controller="ctrl">
+    <h1>Welcome to the Friend App</h1>
+    <button ng-click="loadfrnd()">Load Friends</button>
+    <ul><li ng-repeat="l in list">{{l.name}}{{l.age}}{{l.address}}</li></ul>
+</body>
+</html>
